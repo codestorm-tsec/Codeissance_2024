@@ -5,10 +5,18 @@
 
 h1 {
   font-size: 5rem;
+  font-family: "VT323", monospace;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px;
 }
 
 h2 {
   font-size: 2.5em;
+  font-family: "VT323", monospace;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 765px) {
@@ -64,7 +72,7 @@ h2 {
 
 .navbar-brand img {
   height: 80px;
-  width: 90%;
+  width: 20vw;
 }
 
 .navbar-cs-logo {
@@ -87,7 +95,18 @@ h2 {
   color: goldenrod;
 }
 
+@media screen and (max-width: 765px) {
+  .navbar-brand img {
+    height: 30px;
+    width: 35vw;
+  }
+}
+
 /* *********** FIRST SECTION ************* */
+#home {
+  /* height: 100vw; */
+}
+
 .first-section-bg {
   z-index: 1;
   width: 100%;
@@ -100,8 +119,49 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 19vw;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.codestorm-first-section {
+  width: 31vw;
+  /* background-color: red; */
+}
+
+.codeissance-first-section {
+  width: 50vw;
+  height: 5vw;
+  /* background-color: yellow; */
+}
+
+@media screen and (max-width: 570px) {
+  .first-section-bg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* *********** PARTITION SECTION *********** */
+#partition_section {
+  z-index: 10;
   position: relative;
-  bottom: 800px;
+  /* bottom: 0; */
+  /* margin-top: -200px; */
+}
+
+@media screen and (max-width: 580px) {
+  #partition_section {
+    /* margin-top: -180px; */
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #partition_section {
+    /* margin-top: -150px; */
+  }
 }
 
 /* *********** ABOUT SECTION ************* */
@@ -114,6 +174,11 @@ h2 {
   font-size: 3.5rem;
   font-family: "VT323", monospace;
   color: goldenrod;
+  display: flex;
+  justify-content: left;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 15vw;
 }
 
 .align_ci_about {
@@ -127,8 +192,8 @@ h2 {
 
 .about_video {
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
   width: auto;
   height: 50vh;
   margin-left: 5vw;
@@ -140,6 +205,7 @@ h2 {
   overflow: hidden;
   transform: scale(1);
   transition: 0.5s ease-out;
+  /* background-color: red; */
 }
 
 .about_description {
@@ -152,13 +218,41 @@ h2 {
   margin-right: 5vw;
   margin-left: 15vw;
   padding-bottom: 50px;
-  font-size: 20px;
+  font-size: 1.3rem;
   max-width: 40vw;
+}
+
+@media screen and (max-width: 765px) {
+  .about_title {
+    font-size: 1.8rem;
+  }
+
+  .align_ci_about {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about_description {
+    max-width: fit-content;
+    padding: 15px;
+    margin-top: 0px;
+    margin-inline: 0vw;
+    margin-right: 0vw;
+    margin-left: 0vw;
+  }
 }
 
 /* *********** DOMAINS SECTION ************* */
 
 /* *********** SPONSORS SECTION ************ */
+#sponsors {
+  /* background-image: url("../images/abc.avif"); */
+  background-image: url("../images/abc.avif");
+  /* background-repeat: no-repeat; */
+  background-size: 80vh;
+}
+
 .sponsors_bracket {
   color: goldenrod;
 }
