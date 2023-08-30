@@ -117,36 +117,30 @@ h2 {
 
 /* *********** FIRST SECTION ************* */
 #home {
-  height: 100vh;
-  background-image: url('/images/main.jpg');
-  background-size: cover;
-  background-position: top;
+  /* height: 100vw; */
 }
 
-/* .first-section-bg {
+.first-section-bg {
   z-index: 1;
   width: 100%;
   margin-top: 0px;
   filter: grayscale(0.1);
-} */
+}
 
 .first-section-logo {
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
-  margin-top: -50px;
-  /* padding-top: -150px; */
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  /* position: absolute; */
-  /* top: 13vw; */
-  /* margin: auto; */
-  /* left: 50%;
-  transform: translate(-50%, -50%); */
+  position: absolute;
+  top: 13vw;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .codestorm-first-section {
-  width: 500px;
+  width: 420px;
   height: 300px;
   /* background-color: red; */
 }
@@ -159,6 +153,7 @@ h2 {
 
 .apply-button {
   margin: auto;
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 1024px) {
@@ -192,7 +187,7 @@ h2 {
   }
 
   .first-section-logo {
-    padding-top: 50px;
+    top: 150px;
   }
 
   .codestorm-first-section {
