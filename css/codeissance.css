@@ -136,12 +136,14 @@ h2 {
   top: 13vw;
   margin: auto;
   left: 50%;
+  z-index: 80;
   transform: translate(-50%, -50%);
 }
 
 .codestorm-first-section {
   width: 420px;
   height: 300px;
+  z-index: 80;
   /* background-color: red; */
 }
 
