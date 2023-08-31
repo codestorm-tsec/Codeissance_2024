@@ -182,6 +182,20 @@ header .sticky{
 	position: fixed;
 	overflow-x: hidden;
 } */
+
+.btn-codeissance {
+	background-color: black;
+	color: white;
+	border: none;
+	margin-left: 20px;
+	/* margin: auto; */
+	display: flex;
+}
+
+.btn-codeissance:hover {
+	color: red;
+}
+
 .navbar {
 	padding: 0;
 	font-size: 18px;
@@ -537,8 +551,9 @@ header .sticky{
 	/* transition: 1s; */
 	text-align: center;
 	margin: 0px;
+	font-size: 2vw;
 	/* padding: 0px; */
-	/* padding: 20px; */
+	padding: 25px;
 	border-radius: 5px;
 }
 #Codeissance23-button {
@@ -546,8 +561,8 @@ header .sticky{
 	margin: 15px;
 	text-decoration: none;
 	color: white;
-	border-radius: 5px;
 	font-size: 2vw;
+	border-radius: 5px;
 	border: none;
 	font-style: bolder;
 
