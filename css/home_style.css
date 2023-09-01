@@ -545,7 +545,8 @@ header .sticky{
 #text-section3{
 	background-color: rgba(226, 66, 66, 0.815);
 	position: absolute;
-	top: 75%;
+	top: 70%;
+	font-weight: 600;
 	left: 50%;
 	transform: translate(-50%, 0%);
 	/* transition: 1s; */
@@ -556,6 +557,14 @@ header .sticky{
 	padding: 25px;
 	border-radius: 5px;
 }
+
+@media screen and (max-width: 765px) {
+	#text-section3 {
+		padding: 15px;
+		top:60%;
+	}
+}
+
 #Codeissance23-button {
 	color: white;
 	margin: 15px;
