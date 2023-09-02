@@ -189,7 +189,8 @@ h2 {
 
 .apply-button {
   margin: auto;
-  align-items: flex-end;
+  position: relative;
+  top: 150px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -211,6 +212,11 @@ h2 {
 
   .first-section-logo {
     top: 120px;
+  }
+
+  .apply-button {
+    margin: auto;
+    /* top: 35vw; */
   }
 }
 
