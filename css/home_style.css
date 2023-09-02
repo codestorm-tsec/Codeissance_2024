@@ -554,7 +554,7 @@ header .sticky{
 	margin: 0px;
 	font-size: 2vw;
 	/* padding: 0px; */
-	padding: 25px;
+	padding: 12px  10px;
 	border-radius: 5px;
 }
 
@@ -562,6 +562,10 @@ header .sticky{
 	#text-section3 {
 		padding: 15px;
 		top:60%;
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		font-size: 3.5vw;
 	}
 }
 
