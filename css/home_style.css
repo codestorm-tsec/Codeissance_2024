@@ -189,11 +189,12 @@ header .sticky{
 	border: none;
 	margin-left: 20px;
 	/* margin: auto; */
+	padding-top: 3px;
 	display: flex;
 }
 
 .btn-codeissance:hover {
-	color: red;
+	color: #b11c1c;
 }
 
 .navbar {
