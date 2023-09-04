@@ -185,13 +185,13 @@ h2 {
   /* background-color: yellow; */
 }
 
-/* .apply-button {
-  margin: auto;
+#apply-button {
+  /* margin: auto; */
   position: relative;
   top: 150px;
-} */
+}
 
-#apply-button {
+/* #apply-button {
   position: relative;
   top: 150px;
   align-items: center;
@@ -209,7 +209,7 @@ h2 {
   transition: all 0.1s ease-in 0s;
   white-space: nowrap;
   width: 100%;
-}
+} */
 
 #svg {
   height: 24px;
