@@ -23,7 +23,7 @@ h2 {
   h1 {
     font-size: 3.5rem;
   }
-  
+
   h2 {
     font-size: 2rem;
   }
@@ -96,8 +96,7 @@ h2 {
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url(
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(218, 165, 32)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(218, 165, 32)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 @media screen and (max-width: 765px) {
@@ -105,7 +104,7 @@ h2 {
     height: 30px;
     width: 35vw;
   }
-  
+
   .navbar-collapse {
     display: flex;
     justify-content: center;
@@ -186,16 +185,36 @@ h2 {
   /* background-color: yellow; */
 }
 
-.apply-button {
+/* .apply-button {
   margin: auto;
   position: relative;
   top: 150px;
-}
+} */
 
 #apply-button {
-  margin: auto;
   position: relative;
   top: 150px;
+  align-items: center;
+  background-color: #3770ff;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  height: 44px;
+  justify-content: center;
+  outline: none;
+  padding: 0 32px;
+  transition: all 0.1s ease-in 0s;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#svg {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
 }
 
 @media screen and (max-width: 1024px) {
