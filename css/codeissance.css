@@ -356,6 +356,10 @@ h2 {
 
 .about_event_info {
   font-family: "Noto Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
   display: flex;
   align-items: center;
 }
