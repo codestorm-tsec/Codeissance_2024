@@ -328,25 +328,31 @@ h2 {
   /* background-color: red; */
 }
 
-.about_description {
+/* .about_description {
   font-family: "Noto Sans", sans-serif;
   line-height: 1.7;
   text-align: left;
-  color: white;
   margin-top: 0px;
+  color: white;
   margin-inline: 5vw;
   margin-right: 5vw;
   margin-left: 15vw;
   padding-bottom: 50px;
   font-size: 1.3rem;
   max-width: 40vw;
-}
+} */
 
 .desc_1 {
+  font-family: "Noto Sans", sans-serif;
+  margin-right: 5vw;
+  font-size: 1.3rem;
+  margin-left: 15vw;
+  color: white;
+  line-height: 1.7;
   width: 35vw;
 }
 
-.desc_2 {
+.desc2 {
   width: 30%;
   font-family: "Noto Sans", sans-serif;
   font-size: 1.3rem;
@@ -354,8 +360,14 @@ h2 {
   color: white;
 }
 
-.about_event_info {
+.decs_2_inner {
   font-family: "Noto Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: white;
+}
+
+.about_event_info {
   font-size: 1.3rem;
   line-height: 1.7;
   color: white;
@@ -408,7 +420,7 @@ h2 {
     width: 80vw;
   }
 
-  .desc_2 {
+  .desc2 {
     width: 80vw;
   }
 
