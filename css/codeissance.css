@@ -304,11 +304,10 @@ h2 {
 .align_ci_about {
   padding-bottom: 50px;
   /* padding-top: 50px; */
-  color: white;
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content:space-evenly; */
-  /* align-items: center; */
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .about_video {
@@ -329,49 +328,21 @@ h2 {
   /* background-color: red; */
 }
 
-/* .about_description {
+.about_description {
   font-family: "Noto Sans", sans-serif;
   line-height: 1.7;
   text-align: left;
-  margin-top: 0px;
   color: white;
+  margin-top: 0px;
   margin-inline: 5vw;
   margin-right: 5vw;
   margin-left: 15vw;
   padding-bottom: 50px;
   font-size: 1.3rem;
   max-width: 40vw;
-} */
-
-.desc_1 {
-  font-family: "Noto Sans", sans-serif;
-  margin-right: 5vw;
-  font-size: 1.3rem;
-  margin-left: 15vw;
-  color: white;
-  line-height: 1.7;
-  width: 35vw;
-}
-
-.desc2 {
-  width: 30%;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.7;
-  color: white;
-}
-
-.decs_2_inner {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.7;
-  color: white;
 }
 
 .about_event_info {
-  font-size: 1.3rem;
-  line-height: 1.7;
-  color: white;
   font-family: "Noto Sans", sans-serif;
   display: flex;
   align-items: center;
@@ -402,10 +373,9 @@ h2 {
   }
 
   .align_ci_about {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    color: white;
   }
 
   .about_description {
@@ -418,14 +388,6 @@ h2 {
     margin-left: 5%;
   }
 
-  .desc_1 {
-    width: 80vw;
-  }
-
-  .desc2 {
-    width: 80vw;
-  }
-
   .about_event_info {
     font-family: "Noto Sans", sans-serif;
     display: flex;
@@ -436,7 +398,6 @@ h2 {
     padding-top: 2px;
   }
 }
-
 /* *********** DOMAINS SECTION ************* */
 
 /* *********** SPONSORS SECTION ************ */
