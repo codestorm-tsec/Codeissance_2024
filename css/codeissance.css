@@ -414,6 +414,7 @@ h2 {
 
 .sponsor-image {
   width: 300px;
+  /* height: 120px; */
   /* background-color: #202020; */
   filter: contrast(60%);
   /* height: 200px; */
