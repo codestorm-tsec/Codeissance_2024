@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeissance 2024</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timeline.css">
+</head>
+<body>
+
+    
+    <div class="top">
+
+        <h1 class="title">Tap on an event to know the time of it's happening!</h1>
+    </div>
+    
+    <div class="frame">
+    <div class="overlay"></div> 
+
+    <div class="ouija-wall">
+        <div class="word-container">
+            <div class="word">Reporting</div>
+            <div class="bulb bulb-1"><br></div>
+            <div class="message">    8 a.m., <br>30<sup>th</sup>September, 2024 </div>
+        </div>
+        <div class="word-container">
+            <div class="word">Inaugration</div>
+            <div class="bulb bulb-4"><br></div>
+            <div class="message">     10 a.m., <br> 30<sup>th</sup>September, 2024</div>
+        </div>
+        <div class="word-container">
+            <div class="word1">Hackathon begins</div>
+            <div class="bulb bulb-5"><br></div>
+            <div class="message">     11 a.m.,<br> 30<sup>th</sup>September, 2024</div>
+        </div>
+        <div class="word-container">
+            <div class="word">Mentoring Round</div>
+            <div class="bulb bulb-3"><br></div>
+            <div class="message">     7 p.m., <br>30<sup>th</sup>September, 2024</div>
+        </div>
+        <div class="word-container">
+            <div class="word">Hackathon Ends</div>
+            <div class="bulb bulb-4"><br></div>
+            <div class="message">     11 a.m.,<br> 1<sup>st</sup>October, 2024</div>
+        </div>
+        <div class="word-container">
+            <div class="word">Internal Judging Round </div>
+            <div class="bulb bulb-4"><br></div>
+            <div class="message">     11 a.m.,<br> 1<sup>st</sup>October,2024 </div>
+        </div>
+        <div class="word-container">
+            <div class="word">Shortlisted Teams</div>
+            <div class="bulb bulb-1"><br></div>
+            <div class="message">   Announcement at 2pm, <br>1<sup>st</sup>October,2024</div>
+        </div>
+        <div class="word-container">
+            <div class="word">Judging round</div>
+            <div class="bulb bulb-2"><br></div>
+            <div class="message">    2 pm,<br> 1<sup>st</sup>October,2024</div>
+        </div>
+        <div class="word-container">
+            <div class="word">Winners Declared</div>
+            <div class="bulb bulb-3"><br></div>
+            <div class="message">     5 pm,<br> 1<sup>st</sup>October,2024</div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+    <script>
+             
+
+window.addEventListener('load', function() {
+    const loadingFill = document.querySelector('#loading-fill');
+    const loadingPercentage = document.querySelector('#loading-percentage');
+
+    let progress = 0;
+    const steps = generateRandomSteps(); // Generate random loading steps
+    let currentStep = 0;
+
+    // Function to generate random percentage steps
+    function generateRandomSteps() {
+        let steps = [];
+        steps.push(generateRandomStep(10, 45));  // First random step between 10% and 45%
+        steps.push(generateRandomStep(46, 80));  // Second random step between 46% and 80%
+        steps.push(100);                         // Final step to 100%
+        return steps;
+    }
+
+    // Function to generate a random number between min and max
+    function generateRandomStep(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function updateProgress(target) {
+        const interval = setInterval(function() {
+            if (progress < target) {
+                progress += 1;
+                loadingFill.style.width = progress + '%';
+                loadingPercentage.textContent = progress + '%';
+            } else {
+                clearInterval(interval);
+                currentStep++;
+                if (currentStep < steps.length) {
+                    setTimeout(() => updateProgress(steps[currentStep]), 1000); // Pause before the next stage
+                } else {
+                    setTimeout(() => {
+                        document.body.classList.add('loaded');
+                        document.querySelector('.preloader').style.display = 'none'; // Hide the preloader
+                    }, 1000); // Final pause before showing content
+                }
+            }
+        }, 50); // Adjust speed if needed
+    }
+
+    // Start the progress update
+    updateProgress(steps[currentStep]);
+});
+
+
+
+
+
+
+        const bulbs = document.querySelectorAll('.word, .word1, .bulb');
+    
+        bulbs.forEach(bulb => {
+            bulb.addEventListener('mouseover', () => {
+                //1st
+                document.body.classList.add('spooky');
+                setTimeout(() => {
+                    document.body.classList.remove('spooky');
+                }, 250); // 1st = 0.25 seconds
+    
+                // 2nd
+                setTimeout(() => {
+                    document.body.classList.add('spooky');
+                    setTimeout(() => {
+                        document.body.classList.remove('spooky');
+                    }, 250); // 2nd = 0.25 secons
+                }, 500); // pause 
+            });
+        });
+    </script>
+    
+</body>
+</html>
