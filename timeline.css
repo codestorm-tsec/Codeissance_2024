@@ -243,11 +243,11 @@ body {
     color: transparent;
     /* -webkit-text-stroke: 2px red; */
     position: relative;
-    animation: domainAnimation 3s infinite;
+    /* animation: domainAnimation 3s infinite; */
     margin-bottom: 50px;
 }
 
-@keyframes domainAnimation {
+/* @keyframes domainAnimation {
     0%, 100% {
         transform: scale(1);
     }
@@ -260,7 +260,7 @@ body {
     75% {
         text-shadow: 0 0 0px red, 0 0 0px red;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .cards {

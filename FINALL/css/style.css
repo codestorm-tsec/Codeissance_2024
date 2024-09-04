@@ -431,27 +431,25 @@ button {
      font-display: swap;
  }
  
- .domain {
-     text-align: center;
-     color: white;
-     width: 100%;
-     background-image: url('../../assets/blue_poster.png');
-     margin-bottom: 10%;
- }
+.domain {
+    text-align: center;
+    color: white;
+    width: 100%;
+    background-image: url('../../assets/blue_poster.png');
+    margin-bottom: 10%;
+}
+
+.title {
+    font-family: 'ITC Benguiat Std Book Cn', Arial, sans-serif;
+    font-size: 4em;
+    margin: 100px 0;
+    color: rgb(0, 170, 255);
+    position: relative;
+    margin-bottom: 50px;
+}
+
  
- .title {
-     font-family: 'ITC Benguiat Std Book Cn', Arial, sans-serif;
-     font-size: 4em;
-     margin: 100px 0;
-     color: transparent;
-     -webkit-text-stroke: 2px red;
-     text-shadow: 0 0 2px red, 0 0 3px red;
-     position: relative;
-     animation: domainAnimation 3s infinite;
-     margin-bottom: 50px;
- }
- 
- @keyframes domainAnimation {
+ /* @keyframes domainAnimation {
      0%, 100% {
          transform: scale(1);
      }
@@ -464,7 +462,7 @@ button {
      75% {
          text-shadow: 0 0 3px red, 0 0 5px red;
      }
- }
+ } */
  
  .cards {
      display: flex;
@@ -588,7 +586,7 @@ button {
      }
  
      .domain {
-          margin-bottom: 10%;
+          margin-bottom: 0%;
          width: 100%;
      }
  
@@ -617,6 +615,9 @@ button {
  
      .title {
          font-size: 2em;
+     }
+     .domain{
+          margin-bottom: 0%;
      }
  }
  
@@ -792,14 +793,13 @@ ul.social_icon li a:hover {
     font-size: 4em;
     margin-top: 10px;
     margin-bottom: 50px;
-    color: transparent;
-    -webkit-text-stroke: 2px red; /* For webkit browsers */
-    text-shadow: 0 0 2px red, 0 0 3px red;/* Adjust the size and color for glowing effect */
-    position: relative;
-    animation: domainAnimation 3s infinite;
-    z-index: 10;
+    color: rgb(255, 0, 0);
+    /* -webkit-text-stroke: 2px red; 
+    text-shadow: 0 0 2px red, 0 0 3px red; */
+    /* animation: domainAnimation 3s infinite; */
+    /* z-index: 10; */
 }
-@keyframes domainAnimation {
+/* @keyframes domainAnimation {
      0%, 100% {
          transform: scale(1);
      }
@@ -812,7 +812,7 @@ ul.social_icon li a:hover {
      75% {
          text-shadow: 0 0 3px red, 0 0 5px red;
      }
-}
+} */
 .d_flex {
      display: flex;
      align-items: center;
@@ -1095,7 +1095,20 @@ ul.social_icon li a:hover {
      margin-top: 10px !important;
      margin-bottom: 0;
 }
-
+@media (max-width: 768px) {
+     .first-prize {
+         order: 1; /* Display 1st prize first */
+     }
+     .second-prize {
+         order: 2; /* Display 2nd prize second */
+     }
+     .third-prize {
+         order: 3; /* Display 3rd prize third */
+     }
+     .experts .titlepage{
+          margin-top: 10px;
+     }
+ }
 
 /** end Experts section **/
 
@@ -1979,8 +1992,7 @@ ul.link_menu li a:hover {
  }
 
  /*foooter*/
-
- footer {
+ .footer {
      background: #000000;
      padding-top: 60px;
      text-align: center;
@@ -2227,12 +2239,13 @@ ul.link_menu li a:hover {
      margin-bottom: 20px;
      font-size: 40px;
      /* color: #f39c12; */
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-     -webkit-text-stroke: 2px red; /* For webkit browsers */
-     text-shadow: 0 0 2px red, 0 0 3px red; /* Adjust the size and color for glowing effect */
-     animation: domainAnimation 3s infinite;
-     z-index: 10;
+     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+     -webkit-text-stroke: 2px red;  */
+     /* text-shadow: 0 0 2px red, 0 0 3px red;  */
+     /* animation: domainAnimation 3s infinite; */
+     /* z-index: 10; */
      margin-top: 80px;
+     color: rgb(255,0,0);
  }
  
  .faq-list {
@@ -2466,12 +2479,13 @@ ul.link_menu li a:hover {
      font-size: 30px;
      margin-top: 10px;
      margin-bottom: 50px;
-     color: solid;
-     -webkit-text-stroke: 2px red;  
+     color: rgb(255,0,0);
+     /* color: solid; */
+     /* -webkit-text-stroke: 2px red;   */
      /* text-shadow: 0 0 2px red, 0 0 3px red; */
      position: relative;
-     animation: domainAnimation 3s infinite;
-     z-index: 10;
+     /* animation: domainAnimation 3s infinite; */
+     /* z-index: 10; */
  }
  
  .container-time-back{
@@ -2482,14 +2496,14 @@ ul.link_menu li a:hover {
      margin-top: 10px;
      margin-bottom: 50px;
      color: transparent;
-     -webkit-text-stroke: 2px red; /* For webkit browsers */
-     text-shadow: 0 0 2px red, 0 0 3px red;/* Adjust the size and color for glowing effect */
+     /* -webkit-text-stroke: 2px red;  */
+     /* text-shadow: 0 0 2px red, 0 0 3px red; */
      position: relative;
-     animation: domainAnimation 3s infinite;
-     z-index: 10;
+     /* animation: domainAnimation 3s infinite; */
+     /* z-index: 10; */
 
  }
- @keyframes domainAnimation {
+ /* @keyframes domainAnimation {
      0%, 100% {
          transform: scale(1);
      }
@@ -2502,7 +2516,7 @@ ul.link_menu li a:hover {
      75% {
          text-shadow: 0 0 3px red, 0 0 5px red;
      }
- }
+ } */
  
  .clickable-image {
      width: 80%;
@@ -2517,7 +2531,8 @@ ul.link_menu li a:hover {
  
  @media (max-width: 768px) {
      .clickable-image {
-         max-width: 80%; /* Reduce size on smaller screens */
+         max-width: 200%; /* Reduce size on smaller screens */
+         max-height: 300px;
      }
  
      .container-time h2,.container-time-back {
@@ -2528,7 +2543,8 @@ ul.link_menu li a:hover {
  
  @media (max-width: 480px) {
      .clickable-image, .container-time-back {
-         max-width: 80%; /* Further reduce size on very small screens */
+         max-width: 200%; 
+         height: 900px;/* Further reduce size on very small screens */
      }
  
      .container-time h2 {
