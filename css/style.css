@@ -447,11 +447,11 @@ button {
      -webkit-text-stroke: 2px red;
      text-shadow: 0 0 2px red, 0 0 3px red;
      position: relative;
-     animation: domainAnimation 3s infinite;
+     /* animation: domainAnimation 3s infinite; */
      margin-bottom: 50px;
  }
  
- @keyframes domainAnimation {
+ /* @keyframes domainAnimation {
      0%, 100% {
          transform: scale(1);
      }
@@ -464,7 +464,7 @@ button {
      75% {
          text-shadow: 0 0 3px red, 0 0 5px red;
      }
- }
+ } */
  
  .cards {
      display: flex;
@@ -796,7 +796,7 @@ ul.social_icon li a:hover {
     -webkit-text-stroke: 2px red; /* For webkit browsers */
     text-shadow: 0 0 2px red, 0 0 3px red;/* Adjust the size and color for glowing effect */
     position: relative;
-    animation: domainAnimation 3s infinite;
+    /* animation: domainAnimation 3s infinite; */
     z-index: 10;
 }
 @keyframes domainAnimation {
@@ -2230,7 +2230,7 @@ ul.link_menu li a:hover {
      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
      -webkit-text-stroke: 2px red; /* For webkit browsers */
      text-shadow: 0 0 2px red, 0 0 3px red; /* Adjust the size and color for glowing effect */
-     animation: domainAnimation 3s infinite;
+     /* animation: domainAnimation 3s infinite; */
      z-index: 10;
      margin-top: 80px;
  }
