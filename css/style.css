@@ -148,11 +148,13 @@ body {
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.1); /* Very transparent white background */
+    background-color: black;
+     /* Very transparent white background */
     width: 200px;
     border-radius: 8px;
     padding: 1rem;
-    backdrop-filter: blur(5px); /* Optional: Adds a blur effect */
+    /* backdrop-filter: blur(100px);  */
+    /* Optional: Adds a blur effect */
   }
 
   .nav-menu.open {
@@ -2574,7 +2576,7 @@ ul.link_menu li a:hover {
  
  @media (max-width: 768px) {
      .clickable-image {
-         max-width: 120%;
+         max-width: 200%;
          height: 500px; /* Reduce size on smaller screens */
      }
  
@@ -2647,10 +2649,11 @@ ul.link_menu li a:hover {
  /* Position for narrow screens */
  @media (max-width: 768px) {
      .devfolio-button {
-         top: auto; /* Reset top for narrow screens */
+         top: 85%; /* Reset top for narrow screens */
          bottom: 20%; /* Positioned towards the bottom */
          left: 50%; /* Center horizontally */
-         transform: translateX(-50%); /* Center the button */
+         transform: translateX(-50%);
+         height: 80px; /* Center the button */
      }
  }
  
