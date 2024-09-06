@@ -8,17 +8,13 @@ body {
     margin: 0;
     position: relative;
     overflow: hidden;
-    background-image:url('./images/finalbgvid.png') ;
-
 }
 
-
 .frame {
-    width: 50%; /* Adjust the width as needed */
-    /* Automatically adjust height */
+    width: 800px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust height */
     padding: 20px;
-    border: 5px solid rgb(244, 0, 0);
-    box-shadow: 10px 10px 10px 10px rgb(244, 0, 0);
+    border: 5px solid yellow;
     border-radius: 50px;
     background: url(./images/5.jpg);
     background-position: center;
@@ -28,10 +24,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden; /* Hide any overflow */
-    margin-top: 250px; 
-    margin-bottom: 30px;/* Adjust this margin to ensure it's below the .top */
-    box-shadow: 5px 5px 5px 5px rgb(244, 0, 0);
-
 }
 
 .ouija-wall {
@@ -52,7 +44,7 @@ body {
     background: rgba(0, 0, 0, 0); /* Initially transparent */
     transition: background 0.3s ease-in-out;
     pointer-events: none; /* Allow interactions with elements underneath */
-    z-index: 0; /* Ensure it's above the ouija-wall */
+    z-index: 2; /* Ensure it's above the ouija-wall */
 }
 
 
@@ -70,7 +62,7 @@ body {
 }
 
 .word {
-    color: #000000;
+    color: black;
     font-size: 28px;
     font-weight: boLD;
     margin-bottom: 20px;
@@ -80,7 +72,7 @@ body {
 }
 
 .word1 {
-    color: #000000;
+    color: black;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -103,8 +95,8 @@ body {
 
 .message {
     margin-top: 10px;
-    color: #000000;
-    font-size: 23px;
+    color: #ffffff;
+    font-size: 20px;
     font-weight: boLD;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -114,18 +106,15 @@ body {
     transform: translateX(-50%);
     font-family: 'Lacquer', sans-serif;
     white-space: nowrap; /* Ensure the message stays on one line */
-    text-align: center;
 }
 
 
 
 
 .message1 {
-    text-align: center;
-
     margin-top: 10px;
-    color: #000000;
-    font-size: 17px;
+    color: #fff;
+    font-size: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
     position: absolute;
@@ -137,11 +126,15 @@ body {
 }
 
 .message {
-    top: 90px; /* Adjust this value to position the message below the bulb */
+    top: 125px; /* Adjust this value to position the message below the bulb */
+    opacity: 1;
+    color: black;
 }
 
 .message1 {
-    top: 90px; /* Adjust this value to position the message below the bulb */
+    top: 130px; /* Adjust this value to position the message below the bulb */
+    opacity: 1;
+    color: black;
 }
 
 .word-container:hover .bulb-1 {
@@ -173,14 +166,14 @@ body {
     box-shadow: 10px 10px 20px #a200ff, 0 0 20px #a200ff, 0 0 30px #a200ff;
     opacity: 1;
 }
-
-.word-container:hover .message {
-    opacity: 1; /* Show the message on hover */
+/* Show the message on hover */
+/* .word-container:hover .message {
+    opacity: 1; 
 }
 
 .word-container:hover .message1 {
-    opacity: 1; /* Show the message on hover */
-}
+    opacity: 1; 
+} */
 
 .word-container {
     display: grid;
@@ -207,8 +200,6 @@ body {
     .frame {
         width: 90%;
         padding: 10px;
-        top: 5%;
-        margin: top 2px;
     }
 
     .word-container {
@@ -222,7 +213,7 @@ body {
 
     .message,
     .message1 {
-        font-size: 13px;
+        font-size: 10px;
         top: 40px;
     }
 
@@ -231,102 +222,83 @@ body {
     }
 }
 /* preloader */
-@font-face {
-    font-family: 'ITC Benguiat Std Book Cn';
-    src: url('../fonts/BenguiatProITC-BoldCond.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
 
-.title {
-    font-size: 35px;
-    margin: 100px;
-    color: transparent;
-    /* -webkit-text-stroke: 2px red; */
-    position: relative;
-    animation: domainAnimation 3s infinite;
-    margin-bottom: 30px;
-}
 
-@keyframes domainAnimation {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    25% {
-        text-shadow: 0 0 0px red, 0 0 0px red;
-    }
-    75% {
-        text-shadow: 0 0 0px red, 0 0 0px red;
-    }
-}
 
-@media (max-width: 768px) {
-    .cards {
-        width: 100%;
-        gap: 10px;
-    }
-
-    .card {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .title {
-        font-size: 2em;
-
-    }
-
-    .domain {
-         margin-bottom: 10%;
-        width: 100%;
-    }
-
-    .card-front {
-        width: 100%;
-    }
-
-    .card-back {
-        width: 100%;
-    }
-
-    .card-inner {
-        width: 80%;
-        height: 80%;
-    }
-    .frame{
-        top: -25%;
-        margin-top:50%;   
- }
-}
-
-@media (max-width: 480px) {
-    .cards {
-        gap: 15px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-    .frame{
-        top: -25%;
-        margin-top:50%;   
- }
-}
-.top{
+#preloader {
     position: fixed;
-    top: -8%;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 3;
-    padding: 20px 0;
-    text-align: justify;
-    }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#preloader img {
+    width: 200px; /* Adjust the size as needed */
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+#loading-container {
+    width: 25%;
+    text-align: center;
+    z-index: 1;
+}
+
+#loading-bar {
+    width: 100%;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+#loading-fill {
+    height: 100%;
+    width: 0;
+    background-color: rgb(147, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#loading-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    z-index: 2;
+}
+
+#content {
+    display: none;
+}
+
+.loaded #preloader {
+    display: none;
+}
+
+.loaded #content {
+    display: block;
+}

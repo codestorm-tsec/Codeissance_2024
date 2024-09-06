@@ -443,7 +443,11 @@ button {
     font-family: 'ITC Benguiat Std Book Cn', Arial, sans-serif;
     font-size: 4em;
     margin: 100px 0;
-    color: rgb(0, 170, 255);
+    color: #fa8c17;
+    text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.5), 
+    0 0 2px rgba(255, 255, 255, 0.3), 
+    0 0 9px rgba(255, 255, 255, 0.4); 
     position: relative;
     margin-bottom: 50px;
 }
@@ -1038,6 +1042,7 @@ ul.social_icon li a:hover {
 .experts .titlepage {
      text-align: center;
      padding-bottom: 45px;
+     color: #fa8c17;
 }
 
 .experts .experts_box {
@@ -2158,7 +2163,15 @@ ul.link_menu li a:hover {
 .experts .titlepage {
      text-align: center;
      padding-bottom: 45px;
-     color: rgb(255,0,0);
+     
+     text-shadow: 
+         0 0 1px rgba(255, 255, 255, 0.5), 
+         0 0 2px rgba(255, 255, 255, 0.3), 
+         0 0 9px rgba(255, 255, 255, 0.4); 
+}
+
+.experts .titlepage h2 {
+     color: #fa8c17;
 }
 
 .experts .experts_box {
@@ -2221,7 +2234,7 @@ ul.link_menu li a:hover {
      font-size: 30px;
      text-align: center;
      font-weight: bold;
-     color: rgb(255, 0, 0); /* Red color */
+     color: #fa8c17; /* Red color */
      margin-top: 20px; /* Add some space above the paragraph */
      line-height: 1.5; /* Adjust line height for better readability */
  }
@@ -2245,7 +2258,11 @@ ul.link_menu li a:hover {
      /* animation: domainAnimation 3s infinite; */
      /* z-index: 10; */
      margin-top: 80px;
-     color: rgb(255,0,0);
+     color: #fa8c17;
+     text-shadow: 
+     0 0 1px rgba(255, 255, 255, 0.5), 
+     0 0 2px rgba(255, 255, 255, 0.3), 
+     0 0 9px rgba(255, 255, 255, 0.4); 
  }
  
  .faq-list {
@@ -2479,7 +2496,11 @@ ul.link_menu li a:hover {
      font-size: 30px;
      margin-top: 10px;
      margin-bottom: 50px;
-     color: rgb(255,0,0);
+     color: #fa8c17;
+     text-shadow: 
+     0 0 1px rgba(255, 255, 255, 0.5), 
+     0 0 2px rgba(255, 255, 255, 0.3), 
+     0 0 9px rgba(255, 255, 255, 0.4); 
      /* color: solid; */
      /* -webkit-text-stroke: 2px red;   */
      /* text-shadow: 0 0 2px red, 0 0 3px red; */
