@@ -2207,6 +2207,10 @@ ul.link_menu li a:hover {
 
 .experts .experts_box .meet h3 {
      color: #fa8c17;
+     text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.5), 
+    0 0 2px rgba(255, 255, 255, 0.3), 
+    0 0 9px rgba(255, 255, 255, 0.4); 
      font-size: 28px;
      line-height: 20px;
      padding-bottom: 12px;
@@ -2234,7 +2238,11 @@ ul.link_menu li a:hover {
      font-size: 30px;
      text-align: center;
      font-weight: bold;
-     color: #fa8c17; /* Red color */
+     color: #fa8c17; 
+     text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.5), 
+    0 0 2px rgba(255, 255, 255, 0.3), 
+    0 0 9px rgba(255, 255, 255, 0.4); /* Red color */
      margin-top: 20px; /* Add some space above the paragraph */
      line-height: 1.5; /* Adjust line height for better readability */
  }
