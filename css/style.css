@@ -443,9 +443,13 @@ button {
      font-family: 'ITC Benguiat Std Book Cn', Arial, sans-serif;
      font-size: 4em;
      margin: 100px 0;
-     color: transparent;
-     -webkit-text-stroke: 2px red;
-     text-shadow: 0 0 2px red, 0 0 3px red;
+     color: #fa8c17;
+     /* -webkit-text-stroke: 2px #fa8c17; */
+     text-shadow: 
+         0 0 1px rgba(255, 255, 255, 0.5), 
+         0 0 2px rgba(255, 255, 255, 0.3), 
+         0 0 9px rgba(255, 255, 255, 0.4); 
+     /* text-shadow: 0 0 2px red, 0 0 3px red; */
      position: relative;
      /* animation: domainAnimation 3s infinite; */
      margin-bottom: 50px;
@@ -793,8 +797,8 @@ ul.social_icon li a:hover {
     margin-top: 10px;
     margin-bottom: 50px;
     color: transparent;
-    -webkit-text-stroke: 2px red; /* For webkit browsers */
-    text-shadow: 0 0 2px red, 0 0 3px red;/* Adjust the size and color for glowing effect */
+    /* -webkit-text-stroke: 2px #fa8c17;  */
+    /* text-shadow: 0 0 2px red, 0 0 3px red; */
     position: relative;
     /* animation: domainAnimation 3s infinite; */
     z-index: 10;
@@ -1038,6 +1042,16 @@ ul.social_icon li a:hover {
 .experts .titlepage {
      text-align: center;
      padding-bottom: 45px;
+     border: none;
+}
+
+.experts .titlepage h2{
+     color: #f39c12 ;
+     text-shadow: 
+     0 0 1px rgba(255, 255, 255, 0.5), 
+     0 0 2px rgba(255, 255, 255, 0.3), 
+     0 0 9px rgba(255, 255, 255, 0.4); 
+     
 }
 
 .experts .experts_box {
@@ -2146,7 +2160,7 @@ ul.link_menu li a:hover {
 .experts .titlepage {
      text-align: center;
      padding-bottom: 45px;
-     color: rgb(255,0,0);
+     /* color: rgb(255,0,0); */
 }
 
 .experts .experts_box {
@@ -2209,10 +2223,39 @@ ul.link_menu li a:hover {
      font-size: 30px;
      text-align: center;
      font-weight: bold;
-     color: rgb(255, 0, 0); /* Red color */
+     color: #fa8c17; /* Red color */
+     text-shadow: 
+         0 0 1px rgba(255, 255, 255, 0.5), 
+         0 0 2px rgba(255, 255, 255, 0.3), 
+         0 0 9px rgba(255, 255, 255, 0.4); 
      margin-top: 20px; /* Add some space above the paragraph */
      line-height: 1.5; /* Adjust line height for better readability */
  }
+
+ @media (max-width: 768px) {
+      
+     
+     .experts_img {
+          height: 450px;
+          width: 350px;
+     }
+   }
+   
+   /* Media query for medium mobile devices (e.g., regular smartphones) */
+   @media (max-width: 576px) {
+     .experts_img {
+          height: 450px;
+          width: 350px;
+     }
+   }
+   
+   /* Media query for small mobile devices (e.g., smaller smartphones) */
+   @media (max-width: 480px) {
+     .experts_img {
+          height: 450px;
+          width: 350px;
+     }
+   }
  
  
 /*faqs*/
@@ -2223,13 +2266,19 @@ ul.link_menu li a:hover {
  }
  
  .faqs h2 {
+     font-family: 'ITC Benguiat Std Book Cn', Arial, sans-serif;
      text-align: center;
      margin-bottom: 20px;
-     font-size: 40px;
+     font-size: 4em;
      /* color: #f39c12; */
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-     -webkit-text-stroke: 2px red; /* For webkit browsers */
-     text-shadow: 0 0 2px red, 0 0 3px red; /* Adjust the size and color for glowing effect */
+     color: #fa8c17;
+     text-shadow: 
+         0 0 1px rgba(255, 255, 255, 0.5), 
+         0 0 2px rgba(255, 255, 255, 0.3), 
+         0 0 9px rgba(255, 255, 255, 0.4); 
+     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); */
+     /* -webkit-text-stroke: 2px #fa8c17;  */
+     /* text-shadow: 0 0 2px red, 0 0 3px red;  */
      /* animation: domainAnimation 3s infinite; */
      z-index: 10;
      margin-top: 80px;
@@ -2268,7 +2317,7 @@ ul.link_menu li a:hover {
  }
  
  .faq-question h3 {
-     font-size: 28px;
+     font-size: 25px;
      margin: 0;
      color: #fff; /* Ensure text color contrasts with background */
  }
@@ -2285,7 +2334,7 @@ ul.link_menu li a:hover {
  
  .faq-answer p {
      margin: 0;
-     font-size: 25px;
+     font-size: 22px;
      color: #fff; /* Ensure text color contrasts with background */
  }
  
@@ -2296,13 +2345,17 @@ ul.link_menu li a:hover {
          margin: 10px;
          transform: translateX(35px);
      }
+
+     .faqs h2 {
+          font-size: 35px;;
+     }
  
      .faq-question h3 {
-         font-size: 30px; /* Further reduce font size for smaller screens */
+         font-size: 26px; /* Further reduce font size for smaller screens */
      }
  
      .faq-answer p {
-         font-size: 28px; /* Reduce font size for smaller screens */
+         font-size: 22px; /* Reduce font size for smaller screens */
      }
  }
  
@@ -2312,11 +2365,11 @@ ul.link_menu li a:hover {
      }
  
      .faq-question h3 {
-         font-size: 30px; /* Reduce font size for very small screens */
+         font-size: 26px; /* Reduce font size for very small screens */
      }
  
      .faq-answer p {
-         font-size: 28px; /* Reduce font size for very small screens */
+         font-size: 22px; /* Reduce font size for very small screens */
      }
  
      .faq-question {
@@ -2466,11 +2519,15 @@ ul.link_menu li a:hover {
      font-size: 30px;
      margin-top: 10px;
      margin-bottom: 50px;
-     color: solid;
-     -webkit-text-stroke: 2px red;  
+     color: #fa8c17;
+     /* -webkit-text-stroke: 2px #fa8c17;   */
+     text-shadow: 
+         0 0 1px rgba(255, 255, 255, 0.5), 
+         0 0 2px rgba(255, 255, 255, 0.3), 
+         0 0 9px rgba(255, 255, 255, 0.4); 
      /* text-shadow: 0 0 2px red, 0 0 3px red; */
      position: relative;
-     animation: domainAnimation 3s infinite;
+     /* animation: domainAnimation 3s infinite; */
      z-index: 10;
  }
  
@@ -2517,7 +2574,8 @@ ul.link_menu li a:hover {
  
  @media (max-width: 768px) {
      .clickable-image {
-         max-width: 80%; /* Reduce size on smaller screens */
+         max-width: 120%;
+         height: 500px; /* Reduce size on smaller screens */
      }
  
      .container-time h2,.container-time-back {
