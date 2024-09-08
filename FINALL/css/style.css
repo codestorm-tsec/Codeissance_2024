@@ -1118,6 +1118,7 @@ ul.social_icon li a:hover {
 /** end Experts section **/
 
 
+
 /** contact section **/
 
 .contact {
@@ -2245,8 +2246,181 @@ ul.link_menu li a:hover {
     0 0 9px rgba(255, 255, 255, 0.4); /* Red color */
      margin-top: 20px; /* Add some space above the paragraph */
      line-height: 1.5; /* Adjust line height for better readability */
+     margin-bottom: 20px;
  }
  
+
+ /*SPONSORS*/
+ 
+ .sponsors {
+     width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+ }
+ 
+ .sponsors h1 {
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 40px;
+     /* color: #f39c12; */
+     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+     -webkit-text-stroke: 2px red;  */
+     /* text-shadow: 0 0 2px red, 0 0 3px red;  */
+     /* animation: domainAnimation 3s infinite; */
+     /* z-index: 10; */
+     margin-top: 80px;
+     color: #fa8c17;
+     text-shadow: 
+     0 0 1px rgba(255, 255, 255, 0.5), 
+     0 0 2px rgba(255, 255, 255, 0.3), 
+     0 0 9px rgba(255, 255, 255, 0.4); 
+ }
+ 
+ .sponsor-logo.title {
+     background-color: rgba(114, 115, 169, 0.3); /* Semi-transparent background */
+     padding: 20px;
+     border-radius: 15px;
+     margin: 10px; /* Add spacing between logos */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow for depth */
+     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+ 
+ .sponsor-logo.title img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+ }
+ .sponsor-logo.title:hover {
+     box-shadow: 0 0 15px rgba(250, 140, 23, 0.8), 0 0 30px rgba(250, 140, 23, 0.6); /* Glow effect */
+     transform: scale(1.05); /* Slight zoom on hover */
+ }
+.gold h1{
+
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 40px;
+     /* color: #f39c12; */
+     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+     -webkit-text-stroke: 2px red;  */
+     /* text-shadow: 0 0 2px red, 0 0 3px red;  */
+     /* animation: domainAnimation 3s infinite; */
+     /* z-index: 10; */
+     margin-top: 80px;
+     color: #fa8c17;
+     text-shadow: 
+     0 0 1px rgba(255, 255, 255, 0.5), 
+     0 0 2px rgba(255, 255, 255, 0.3), 
+     0 0 9px rgba(255, 255, 255, 0.4); 
+ }
+ .sponsor-logo.gold {
+     background-color: rgba(114, 115, 169, 0.3); /* Semi-transparent background */
+     padding: 20px;
+     border-radius: 15px;
+     margin: 10px; /* Add spacing between logos */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow for depth */
+     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+ }
+ 
+ .sponsor-logo.gold img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .sponsor-logo.gold:hover {
+     box-shadow: 0 0 15px rgba(250, 140, 23, 0.8), 0 0 30px rgba(250, 140, 23, 0.6); /* Glow effect */
+     transform: scale(1.05); /* Slight zoom on hover */
+ }
+ 
+ .education h1{
+
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 40px;
+     /* color: #f39c12; */
+     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+     -webkit-text-stroke: 2px red;  */
+     /* text-shadow: 0 0 2px red, 0 0 3px red;  */
+     /* animation: domainAnimation 3s infinite; */
+     /* z-index: 10; */
+     margin-top: 80px;
+     color: #fa8c17;
+     text-shadow: 
+     0 0 1px rgba(255, 255, 255, 0.5), 
+     0 0 2px rgba(255, 255, 255, 0.3), 
+     0 0 9px rgba(255, 255, 255, 0.4); 
+ }
+ .sponsor-logo.education {
+     background-color: rgba(114, 115, 169, 0.3); /* Semi-transparent background */
+     padding: 20px;
+     border-radius: 15px;
+     margin: 10px; /* Add spacing between logos */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow for depth */
+     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+ }
+ 
+ .sponsor-logo.education img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .sponsor-logo.education:hover {
+     box-shadow: 0 0 15px rgba(250, 140, 23, 0.8), 0 0 30px rgba(250, 140, 23, 0.6); /* Glow effect */
+     transform: scale(1.05); /* Slight zoom on hover */
+ }
+ @media screen and (max-width: 768px) {
+     .sponsors {
+         padding: 15px;
+         width: 100%; /* Ensure the container takes full width */
+         margin: 0 auto; /* Center the container horizontally */
+         transform: none; /* Remove translateX to avoid shifting */
+     }
+     
+     .sponsors h1 {
+         font-size: 3em; /* Reduce the title size */
+     }
+ 
+     .sponsors-grid {
+         flex-direction: column; /* Stack logos vertically */
+         align-items: center; /* Center align logos */
+     }
+ 
+     .sponsor-logo.title {
+         width: 100%; /* Adjust the width of the logo container */
+         text-align: center; /* Center the content */
+     }
+     
+     .sponsor-logo.title img {
+         margin: 0 auto; /* Center the image */
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+     .sponsors {
+         padding: 10px;
+         width: 100%; /* Ensure the container is responsive on very small screens */
+         margin: 0 auto; /* Center the container */
+     }
+     
+     .sponsors h1 {
+         font-size: 2em; /* Further reduce the title size */
+     }
+ 
+     .sponsor-logo.title {
+         width: 100%; /* Further adjust width for smaller screens */
+     }
+ 
+     .sponsor-logo.title img {
+         max-width: 100%; /* Ensure the image scales down appropriately */
+         height: auto;
+     }
+ }
+
  
 /*faqs*/
 .faqs {
@@ -2608,41 +2782,35 @@ ul.link_menu li a:hover {
      }
  }
  
- .devfolio-button {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     padding: 15px 30px;
-     background-color: rgb(0, 140, 255);
-     color: rgb(255, 255, 255);
-     font-size: 18px;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
-     transition: all 0.3s ease;
-     text-transform: uppercase;
-     letter-spacing: 1px;
- }
- 
- .devfolio-button {
-     top: 75%; /* Slightly lower than halfway down */
-     left: 25%; /* Positioned on the left side */
-     transform: translate(0, -50%);
- }
- 
- /* Position for narrow screens */
- @media (max-width: 768px) {
-     .devfolio-button {
-         top: auto; /* Reset top for narrow screens */
-         bottom: 20%; /* Positioned towards the bottom */
-         left: 50%; /* Center horizontally */
-         transform: translateX(-50%); /* Center the button */
-     }
- }
- 
- /* Hover Animation */
- .devfolio-button:hover {
-     background-color: red;
-     color: white;
- }
+.devfolio-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.devfolio-button {
+    top: 75%; /* slightly lower than halfway down */
+    left: 22%; /*  on the left side */
+    transform: translate(0, -50%);
+}
+
+/* narrow screens */
+@media (max-width: 768px) {
+    .devfolio-button {
+        top: auto; /* reset top */
+        bottom: 20%; /* towards the bottom */
+        left: 50%; /* center horizontally */
+        transform: translateX(-50%); /*  center button */
+}
+}
