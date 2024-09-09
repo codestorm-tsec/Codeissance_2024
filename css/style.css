@@ -2798,7 +2798,7 @@ ul.link_menu li a:hover {
     transform: translate(-50%, -50%);
     background-color: #fff;
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 22px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -2806,6 +2806,9 @@ ul.link_menu li a:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-top: 5px;
+    width: 300px;
+    height: 50px;
+  
 }
 
 .devfolio-button {
@@ -2817,9 +2820,11 @@ ul.link_menu li a:hover {
 /* narrow screens */
 @media (max-width: 768px) {
     .devfolio-button {
-        top: auto; /* reset top */
+        top: 90%; /* reset top */
         bottom: 20%; /* towards the bottom */
         left: 50%; /* center horizontally */
-        transform: translateX(-50%); /*  center button */
+        transform: translateX(-50%); 
+        width: 350px;
+        height: 50px;
 }
 }
