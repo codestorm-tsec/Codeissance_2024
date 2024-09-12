@@ -2819,6 +2819,12 @@ ul.link_menu li a:hover {
     transform: translate(0, -50%);
 }
 
+.devfolio-button:hover{
+    background-color: rgba(55, 112, 255, 1);
+    color: white;
+}
+
+
 
 @media (max-width: 768px) {
     .devfolio-button {
