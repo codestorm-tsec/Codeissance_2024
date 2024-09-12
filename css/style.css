@@ -2793,13 +2793,13 @@ ul.link_menu li a:hover {
      }
  }
  
-/* .devfolio-button {
+.devfolio-button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    color: rgb(255, 255, 255);
+    /* background-color: #fff;
+    color: rgb(255, 255, 255); */
     font-size: 22px;
     border: none;
     border-radius: 5px;
@@ -2811,9 +2811,9 @@ ul.link_menu li a:hover {
     width: 300px;
     height: 50px;
   
-} */
+} 
 
-/* .devfolio-button {
+.devfolio-button {
     top: 75%; 
     left: 22%; 
     transform: translate(0, -50%);
@@ -2829,4 +2829,4 @@ ul.link_menu li a:hover {
         width: 350px;
         height: 50px;
 } 
-} */
+}
