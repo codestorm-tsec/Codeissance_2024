@@ -2828,11 +2828,9 @@ ul.link_menu li a:hover {
 
 @media (max-width: 768px) {
     .devfolio-button {
-        top: 90%; 
-        bottom: 20%; 
-        left: 50%;
+        top: auto; /* Reset top for narrow screens */
+        bottom: 20%; /* Positioned towards the bottom */
+        left: 50%; /* Center horizontally */
         transform: translateX(-50%); 
-        width: 350px;
-        height: 50px;
 } 
 }
