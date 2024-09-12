@@ -2381,6 +2381,8 @@ ul.link_menu li a:hover {
      box-shadow: 0 0 15px rgba(250, 140, 23, 0.8), 0 0 30px rgba(250, 140, 23, 0.6); /* Glow effect */
      transform: scale(1.05); /* Slight zoom on hover */
  }
+
+ 
  @media screen and (max-width: 768px) {
      .sponsors {
          padding: 15px;
@@ -2791,7 +2793,7 @@ ul.link_menu li a:hover {
      }
  }
  
-.devfolio-button {
+/* .devfolio-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2809,22 +2811,22 @@ ul.link_menu li a:hover {
     width: 300px;
     height: 50px;
   
-}
+} */
 
-.devfolio-button {
-    top: 75%; /* slightly lower than halfway down */
-    left: 22%; /*  on the left side */
+/* .devfolio-button {
+    top: 75%; 
+    left: 22%; 
     transform: translate(0, -50%);
 }
 
-/* narrow screens */
+
 @media (max-width: 768px) {
     .devfolio-button {
-        top: 90%; /* reset top */
-        bottom: 20%; /* towards the bottom */
-        left: 50%; /* center horizontally */
+        top: 90%; 
+        bottom: 20%; 
+        left: 50%;
         transform: translateX(-50%); 
         width: 350px;
         height: 50px;
-}
-}
+} 
+} */
